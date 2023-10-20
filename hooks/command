@@ -11,7 +11,7 @@ ls -l $(which docker)
 
 docker version
 
-echo nscr.io | docker-credential-nsc
+echo nscr.io | docker-credential-nsc get
 
 ls -l /var/run/nsc
 
