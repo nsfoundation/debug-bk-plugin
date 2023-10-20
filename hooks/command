@@ -9,8 +9,6 @@ which docker
 
 ls -l $(which docker)
 
-file $(which docker)
-
 docker version
 
 docker pull nscr.io/01gr1g2rpb7ahzddy3f227exq9/test-cache:v1
