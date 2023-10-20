@@ -2,3 +2,9 @@
 set -ueo pipefail
 
 env
+
+which nsc
+
+which docker-credential-nsc
+
+echo 'nscr.io' | docker-credential-nsc get
