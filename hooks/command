@@ -3,6 +3,8 @@ set -ueox pipefail
 
 env
 
+id
+
 docker pull nscr.io/01gr1g2rpb7ahzddy3f227exq9/test-cache:v1
 
 docker compose -f .buildkite/docker/docker-compose.yml pull
