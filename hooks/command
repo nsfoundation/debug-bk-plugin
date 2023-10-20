@@ -1,6 +1,8 @@
 #!/bin/bash
-set -ueo pipefail
+set -ueox pipefail
 
 env
 
-COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker compose -f .buildkite/docker/docker-compose.yml -p buildkite018b4d9eb82c47a0a25e661e399e0a71 up -d --scale test=0 test
+docker pull nscr.io/01gr1g2rpb7ahzddy3f227exq9/test-cache:v1
+
+docker compose -f .buildkite/docker/docker-compose.yml pull
