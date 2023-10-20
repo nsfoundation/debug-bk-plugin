@@ -3,8 +3,4 @@ set -ueo pipefail
 
 env
 
-which nsc
-
-which docker-credential-nsc
-
-echo 'nscr.io' | docker-credential-nsc get
+docker compose -f .buildkite/docker/docker-compose.yml -p buildkite018b4d9eb82c47a0a25e661e399e0a71 up -d --scale test=0 test
