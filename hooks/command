@@ -16,17 +16,18 @@ cat <<EOF > ~/.docker/config.json
 }
 EOF
 
+
 cat ~/.docker/config.json
 
-ls -l $(which docker)
-
-docker version
+ls -l /namespace/bin/
 
 echo nscr.io | docker-credential-nsc get
 
 ls -l /var/run/nsc
 
-cat ~/.docker/config.json
+ls -l $(which docker)
+
+docker version
 
 docker pull nscr.io/01gr1g2rpb7ahzddy3f227exq9/test-cache:v1
 
