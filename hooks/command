@@ -9,17 +9,6 @@ which docker
 
 cat ~/.docker/config.json
 
-cat <<EOF > ~/.docker/config.json
-{
-  "auths": {},
-  "credHelpers": {
-    "nscr.io": "nsc"
-  }
-}
-EOF
-
-cat ~/.docker/config.json
-
 docker images
 
 ls -l /namespace/bin/
