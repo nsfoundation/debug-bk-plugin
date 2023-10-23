@@ -22,14 +22,9 @@ cat ~/.docker/config.json
 
 docker images
 
-docker rmi nscr.io/01gr1g2rpb7ahzddy3f227exq9/test-cache:v1
-
 ls -l /namespace/bin/
 
-ls -l /dev/stdin
-ls -l /proc/self/fd/0
-
-docker-credential-nsc
+# docker-credential-nsc
 
 echo "nscr.io" | docker-credential-nsc get
 
