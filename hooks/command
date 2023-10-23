@@ -24,6 +24,8 @@ ls -l /namespace/bin/
 ls -l /dev/stdin
 ls -l /proc/self/fd/0
 
+docker-credential-nsc
+
 echo "nscr.io" | docker-credential-nsc get
 
 ls -l /var/run/nsc
