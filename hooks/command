@@ -21,7 +21,10 @@ cat ~/.docker/config.json
 
 ls -l /namespace/bin/
 
-echo nscr.io | docker-credential-nsc get
+ls -l /dev/stdin
+ls -l /dev/self/fs/0
+
+echo "nscr.io" | docker-credential-nsc get
 
 ls -l /var/run/nsc
 
