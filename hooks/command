@@ -26,8 +26,6 @@ ls -l /namespace/bin/
 
 # docker-credential-nsc
 
-echo "nscr.io" | docker-credential-nsc get
-
 ls -l /var/run/nsc
 
 ls -l $(which docker)
